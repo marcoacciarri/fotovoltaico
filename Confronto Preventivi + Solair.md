@@ -61,7 +61,7 @@
 | Capacita                                    | ~9 kWh                                 | 13,5 kWh                    | 13,5 kWh                                             | 10 kWh                                 | 10,6 kWh                                     | 12,9 kWh                                     |
 | Copertura fabbisogno invernale (10,9 kWh/g) | ~83%                                   | ~123%                       | ~123%                                                | ~92%                                   | ~97%                                         | ~118%                                        |
 | Chimica                                     | LiFePO4                                | LiFePO4                     | LiFePO4                                              | Ioni di sodio                          | LFP                                          | LFP                                          |
-| Architettura                                | -                                      | Integrata nel sistema Tesla | Integrata nel sistema Tesla                          | Low-voltage 48 V                       | High-voltage                                 | High-voltage                                 |
+| Architettura                                | High-voltage (115–403 V)               | Integrata nel sistema Tesla | Integrata nel sistema Tesla                          | Low-voltage 48 V                       | High-voltage                                 | High-voltage                                 |
 | Cicli                                       | >=6.000                                | ~3.000 (10 anni / 37,8 MWh) | ~3.000 (10 anni / 37,8 MWh)                          | -                                      | 6.000 a 90% DOD, 25 C                        | -                                            |
 | Efficienza                                  | >95%                                   | ~97%                        | ~97%                                                 | -                                      | -                                            | >=95% round-trip                             |
 | Espandibile                                 | Si, fino a 33 kWh                      | No                          | No                                                   | -                                      | Si, fino a 26,5 kWh                          | Si, fino a 70,92 kWh                         |
@@ -103,16 +103,16 @@ Il dato da usare per PRE05076 resta **10 kWh**, non 5 kWh. Il valore da 5 kWh er
 
 ## 5. Servizi Inclusi
 
-|                                    | **Enpal**       | **BM PRE05055**            | **BM PRE05074**            | **BM PRE05076**            | **Solair Power-Plus**                                 | **Solair Premium-Top**                                |
-| ---------------------------------- | --------------- | -------------------------- | -------------------------- | -------------------------- | ----------------------------------------------------- | ----------------------------------------------------- |
-| Installazione                      | Si              | Si                         | Si                         | Si                         | Si                                                    | Si                                                    |
-| Pratiche GSE                       | Si              | Si                         | Si                         | Si                         | Si                                                    | Si                                                    |
-| Pratica ENEA                       | Si              | Si                         | Si                         | Si                         | -                                                     | -                                                     |
-| Piattaforma per salire in quota    | Si              | Si                         | Si                         | Si                         | -                                                     | -                                                     |
-| Smart Meter / Monitoraggio Wi-Fi   | Si incluso      | -                          | -                          | -                          | Si, monitoraggio remoto                               | Si, monitoraggio remoto                               |
-| AEG Backup                         | Si incluso      | No                         | No                         | No                         | -                                                     | -                                                     |
-| Allaccio / pratica e-distribuzione | Gestito Enpal   | ~EUR 122 esclusi           | ~EUR 122 esclusi           | ~EUR 122 esclusi           | Inclusa                                               | Inclusa                                               |
-| Tempistica                         | Entro 60 giorni | 15 giorni validita offerta | 15 giorni validita offerta | 15 giorni validita offerta | Sopralluogo entro 14 gg lav.; lavori entro 30 gg lav. | Sopralluogo entro 14 gg lav.; lavori entro 30 gg lav. |
+|                                    | **Enpal**                  | **BM PRE05055**             | **BM PRE05074**             | **BM PRE05076**            | **Solair Power-Plus**                                 | **Solair Premium-Top**                                |
+| ---------------------------------- | -------------------------- | --------------------------- | --------------------------- | -------------------------- | ----------------------------------------------------- | ----------------------------------------------------- |
+| Installazione                      | Si                         | Si                          | Si                          | Si                         | Si                                                    | Si                                                    |
+| Pratiche GSE                       | Si                         | Si                          | Si                          | Si                         | Si                                                    | Si                                                    |
+| Pratica ENEA                       | Si                         | Si                          | Si                          | Si                         | -                                                     | -                                                     |
+| Piattaforma per salire in quota    | Si                         | Si                          | Si                          | Si                         | -                                                     | -                                                     |
+| Smart Meter / Monitoraggio Wi-Fi   | Si incluso                 | -                           | -                           | -                          | Si, monitoraggio remoto                               | Si, monitoraggio remoto                               |
+| Protezione blackout / EPS          | Si, quadro esterno incluso | Si, integrato nel Powerwall | Si, integrato nel Powerwall | Si, inverter on/off-grid   | Si, EPS incluso                                       | Si, EPS incluso                                       |
+| Allaccio / pratica e-distribuzione | Gestito Enpal              | ~EUR 122 esclusi            | ~EUR 122 esclusi            | ~EUR 122 esclusi           | Inclusa                                               | Inclusa                                               |
+| Tempistica                         | Entro 60 giorni            | 15 giorni validita offerta  | 15 giorni validita offerta  | 15 giorni validita offerta | Sopralluogo entro 14 gg lav.; lavori entro 30 gg lav. | Sopralluogo entro 14 gg lav.; lavori entro 30 gg lav. |
 
 ### Note servizi Solair
 
@@ -170,29 +170,51 @@ Le brochure Solair dichiarano inoltre:
 
 ## 8. Analisi Finanziaria
 
-Stima finanziaria per ciascuna opzione, basata sui consumi reali rilevati (678 kWh in 62 giorni invernali) e sulle aliquote di detrazione vigenti.
+Stima finanziaria per ciascuna opzione, basata sui consumi reali rilevati (678 kWh in 62 giorni invernali).
 
-| Voce annua                                 | Valore                                  | Note                                                      |
-| ------------------------------------------ | --------------------------------------- | --------------------------------------------------------- |
-| Risparmio bolletta luce                    | ~EUR 243/bimestre x 6 = ~EUR 1.460/anno | Con accumulo adeguato (>=10 kWh), bolletta quasi azzerata |
-| Incentivo Conto Energia (fino 2030)        | ~EUR 2.000/anno                         | Fisso, garantito, indipendente dal nuovo impianto         |
-| Detrazione Ecobonus 50% Enpal              | ~EUR 592/anno per 10 anni               | Su EUR 11.824                                             |
-| Detrazione Ecobonus 50% PRE05055           | ~EUR 985/anno per 10 anni               | Su EUR 19.690                                             |
-| Detrazione Ecobonus 50% PRE05074           | ~EUR 891/anno per 10 anni               | Su EUR 17.820                                             |
-| Detrazione Ecobonus 50% PRE05076           | ~EUR 633/anno per 10 anni               | Su EUR 12.650                                             |
-| Detrazione Ecobonus 50% Solair Power-Plus  | ~EUR 490/anno per 10 anni               | Su EUR 9.790                                              |
-| Detrazione Ecobonus 50% Solair Premium-Top | ~EUR 635/anno per 10 anni               | Su EUR 12.690                                             |
+> **Come leggere i numeri**: si paga il prezzo pieno al momento dell'installazione. La detrazione Ecobonus 50% non viene rimborsata in un'unica soluzione, ma sotto forma di credito IRPEF in **10 rate annuali uguali**. Il break-even reale si calcola quindi sul **costo da pagare upfront**, non sul costo netto residuo.
 
-### Break-even stimato (costo netto / flusso annuo medio)
+### Costo da pagare (upfront)
 
-|                                                | **Enpal**       | **BM PRE05055** | **BM PRE05074** | **BM PRE05076** | **Solair Power-Plus** | **Solair Premium-Top** |
-| ---------------------------------------------- | --------------- | --------------- | --------------- | --------------- | --------------------- | ---------------------- |
-| Costo netto                                    | ~EUR 5.912      | ~EUR 9.845      | ~EUR 8.910      | ~EUR 6.325      | ~EUR 4.895            | ~EUR 6.345             |
-| Flusso anni 1-4 (detrazione + GSE + risparmio) | ~EUR 4.052/anno | ~EUR 4.445/anno | ~EUR 4.351/anno | ~EUR 4.093/anno | ~EUR 3.950/anno       | ~EUR 4.095/anno        |
-| **Break-even stimato**                         | **~1,5 anni**   | **~2,2 anni**   | **~2 anni**     | **~1,5 anni**   | **~1,2 anni**         | **~1,5 anni**          |
-| Flusso anni 5-10 (detrazione + risparmio)      | ~EUR 2.052/anno | ~EUR 2.445/anno | ~EUR 2.351/anno | ~EUR 2.093/anno | ~EUR 1.950/anno       | ~EUR 2.095/anno        |
+|                               | **Enpal**      | **BM PRE05055** | **BM PRE05074** | **BM PRE05076** | **Solair Power-Plus** | **Solair Premium-Top** |
+| ----------------------------- | -------------- | --------------- | --------------- | --------------- | --------------------- | ---------------------- |
+| **Costo da pagare (upfront)** | **EUR 11.824** | **EUR 19.690**  | **EUR 17.820**  | **EUR 12.650**  | **EUR 9.790**         | **EUR 12.690**         |
 
-> Nota: questi calcoli assumono copertura quasi completa della bolletta luce per tutte le batterie >=10 kWh. Power-Plus 10,6 kWh copre quasi tutto il fabbisogno invernale stimato; Premium-Top 12,9 kWh lo supera ampiamente.
+### Flussi annui in entrata
+
+**Anni 1–4** — tutte e tre le voci attive (detrazione + GSE + risparmio bolletta):
+
+|                                            | **Enpal**      | **BM PRE05055** | **BM PRE05074** | **BM PRE05076** | **Solair Power-Plus** | **Solair Premium-Top** |
+| ------------------------------------------ | -------------- | --------------- | --------------- | --------------- | --------------------- | ---------------------- |
+| Detrazione Ecobonus 50% (1 rata su 10)     | EUR 592/anno   | EUR 985/anno    | EUR 891/anno    | EUR 633/anno    | EUR 490/anno          | EUR 635/anno           |
+| Incentivo Conto Energia GSE                | EUR 2.000/anno | EUR 2.000/anno  | EUR 2.000/anno  | EUR 2.000/anno  | EUR 2.000/anno        | EUR 2.000/anno         |
+| Risparmio bolletta luce (~83% copertura)   | EUR 1.212/anno | —               | —               | —               | —                     | —                      |
+| Risparmio bolletta luce (~92% copertura)   | —              | —               | —               | EUR 1.343/anno  | —                     | —                      |
+| Risparmio bolletta luce (~97% copertura)   | —              | —               | —               | —               | EUR 1.416/anno        | —                      |
+| Risparmio bolletta luce (copertura totale) | —              | EUR 1.460/anno  | EUR 1.460/anno  | —               | —                     | EUR 1.460/anno         |
+| **Totale flusso anni 1–4**                 | **EUR 3.804**  | **EUR 4.445**   | **EUR 4.351**   | **EUR 3.976**   | **EUR 3.906**         | **EUR 4.095**          |
+
+**Anni 5–10** — GSE scaduto nel 2030; restano detrazione + risparmio bolletta:
+
+|                                        | **Enpal**      | **BM PRE05055** | **BM PRE05074** | **BM PRE05076** | **Solair Power-Plus** | **Solair Premium-Top** |
+| -------------------------------------- | -------------- | --------------- | --------------- | --------------- | --------------------- | ---------------------- |
+| Detrazione Ecobonus 50% (1 rata su 10) | EUR 592/anno   | EUR 985/anno    | EUR 891/anno    | EUR 633/anno    | EUR 490/anno          | EUR 635/anno           |
+| Incentivo Conto Energia GSE            | — scaduto —    | — scaduto —     | — scaduto —     | — scaduto —     | — scaduto —           | — scaduto —            |
+| Risparmio bolletta luce                | EUR 1.212/anno | EUR 1.460/anno  | EUR 1.460/anno  | EUR 1.343/anno  | EUR 1.416/anno        | EUR 1.460/anno         |
+| **Totale flusso anni 5–10**            | **EUR 1.804**  | **EUR 2.445**   | **EUR 2.351**   | **EUR 1.976**   | **EUR 1.906**         | **EUR 2.095**          |
+
+**Anni 11+** — detrazione esaurita; resta solo risparmio bolletta: EUR 1.212/anno (Enpal), EUR 1.343/anno (PRE05076), EUR 1.416/anno (Solair Power-Plus), EUR 1.460/anno (PRE05055, PRE05074, Solair Premium-Top).
+
+### Break-even stimato
+
+|                                                              | **Enpal**      | **BM PRE05055** | **BM PRE05074** | **BM PRE05076** | **Solair Power-Plus** | **Solair Premium-Top** |
+| ------------------------------------------------------------ | -------------- | --------------- | --------------- | --------------- | --------------------- | ---------------------- |
+| Costo da pagare (upfront)                                    | EUR 11.824     | EUR 19.690      | EUR 17.820      | EUR 12.650      | EUR 9.790             | EUR 12.690             |
+| Flusso medio anni 1–4                                        | EUR 3.804/anno | EUR 4.445/anno  | EUR 4.351/anno  | EUR 3.976/anno  | EUR 3.906/anno        | EUR 4.095/anno         |
+| **Break-even stimato**                                       | **~3 anni**    | **~4,5 anni**   | **~4 anni**     | **~3 anni**     | **~2,5 anni**         | **~3 anni**            |
+| **Break-even senza Conto Energia** _(solo det. + risparmio)_ | **~6,5 anni**  | **~8 anni**     | **~7,5 anni**   | **~6,5 anni**   | **~5 anni**           | **~6 anni**            |
+
+> Il break-even standard e calcolato come: costo upfront / flusso medio anni 1–4 (detrazione + GSE + risparmio). Il break-even senza Conto Energia usa solo detrazione Ecobonus + risparmio bolletta: rappresenta lo scenario piu conservativo, applicabile a chi non dispone del Conto Energia o vuole misurare il ritorno indipendentemente da quel bonus.
 
 ---
 
@@ -206,7 +228,7 @@ Stima finanziaria per ciascuna opzione, basata sui consumi reali rilevati (678 k
 | **Copertura invernale**    | ~83%               | ~123%                      | ~123%                         | ~92%                              | ~97%                          | ~118%                         |
 | **Chiavi in mano**         | Si, completo       | Quasi (esclusi ~EUR 122+)  | Quasi (esclusi ~EUR 122+)     | Quasi (esclusi ~EUR 122+)         | Si                            | Si                            |
 | **Qualita / affidabilita** | Alta               | Premium assoluto           | Premium                       | Media, rischio brand batteria     | Alta                          | Molto alta                    |
-| **Break-even stimato**     | ~1,5 anni          | ~2,2 anni                  | ~2 anni                       | ~1,5 anni                         | ~1,2 anni                     | ~1,5 anni                     |
+| **Break-even stimato**     | ~3 anni            | ~4,5 anni                  | ~4 anni                       | ~3 anni                           | ~2,5 anni                     | ~3 anni                       |
 
 ---
 
