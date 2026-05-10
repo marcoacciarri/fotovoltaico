@@ -15,15 +15,16 @@
 
 ## 1. Panoramica Offerte - 6 Opzioni
 
-|                    | **Enpal**                               | **BM PRE05055**          | **BM PRE05074**                   | **BM PRE05076**                          | **Solair Power-Plus**            | **Solair Premium-Top**                   |
-| ------------------ | --------------------------------------- | ------------------------ | --------------------------------- | ---------------------------------------- | -------------------------------- | ---------------------------------------- |
-| Data               | 30 apr 2026                             | 19 apr 2026              | 5 mag 2026                        | 5 mag 2026                               | -                                | -                                        |
-| Riferimento        | Alberto Froldi                          | Vincenzo Angeletti       | Vincenzo Angeletti                | Vincenzo Angeletti                       | Solair Group                     | Solair Group                             |
-| Nome proposta      | -                                       | Proposta Maxeon/Tesla    | Proposta B: Indipendenza Totale   | Proposta A: Efficienza Sostenibile       | Power-Plus 6 kWp                 | Premium-Top 6 kWp                        |
-| Potenza FV         | 4,85 kWp                                | 4 kWp                    | 4 kWp                             | 4 kWp                                    | 6 kWp                            | 6 kWp                                    |
-| Batteria           | ~9 kWh                                  | 13,5 kWh                 | 13,5 kWh                          | 10 kWh                                   | 10,6 kWh                         | 12,9 kWh                                 |
-| Tipo installazione | Parallelo                               | Parallelo                | Parallelo                         | Parallelo                                | -                                | -                                        |
-| Nota sintetica     | Chiavi in mano con FoxESS branded Enpal | Pannelli premium + Tesla | Miglior compromesso premium Tesla | Prezzo basso ma batteria sodio emergente | Soluzione HV LFP con EPS incluso | Soluzione premium BYD con garanzia lunga |
+|                               | **Enpal**                               | **BM PRE05055**          | **BM PRE05074**                   | **BM PRE05076**                          | **Solair Power-Plus**            | **Solair Premium-Top**                   |
+| ----------------------------- | --------------------------------------- | ------------------------ | --------------------------------- | ---------------------------------------- | -------------------------------- | ---------------------------------------- |
+| Data                          | 30 apr 2026                             | 19 apr 2026              | 5 mag 2026                        | 5 mag 2026                               | -                                | -                                        |
+| Riferimento                   | Alberto Froldi                          | Vincenzo Angeletti       | Vincenzo Angeletti                | Vincenzo Angeletti                       | Solair Group                     | Solair Group                             |
+| Nome proposta                 | -                                       | Proposta Maxeon/Tesla    | Proposta B: Indipendenza Totale   | Proposta A: Efficienza Sostenibile       | Power-Plus 6 kWp                 | Premium-Top 6 kWp                        |
+| Potenza FV                    | 4,85 kWp                                | 4 kWp                    | 4 kWp                             | 4 kWp                                    | 6 kWp                            | 6 kWp                                    |
+| Batteria                      | ~9 kWh                                  | 13,5 kWh                 | 13,5 kWh                          | 10 kWh                                   | 10,6 kWh                         | 12,9 kWh                                 |
+| Tipo installazione            | Parallelo                               | Parallelo                | Parallelo                         | Parallelo                                | -                                | -                                        |
+| **Costo da pagare (upfront)** | **EUR 11.824**                          | **EUR 19.690**           | **EUR 17.820**                    | **EUR 12.650**                           | **EUR 9.790**                    | **EUR 12.690**                           |
+| Nota sintetica                | Chiavi in mano con FoxESS branded Enpal | Pannelli premium + Tesla | Miglior compromesso premium Tesla | Prezzo basso ma batteria sodio emergente | Soluzione HV LFP con EPS incluso | Soluzione premium BYD con garanzia lunga |
 
 ---
 
